@@ -10,7 +10,7 @@
     </div>
     <div class="">
       <label for="price">PRICE</label>
-      <input type="text" name="price" value="{{ $pagamento -> price }}">
+      <input type="number" name="price" value="{{ $pagamento -> price }}">
     </div>
 
     <button type="submit" name="button">UPDATE</button>
