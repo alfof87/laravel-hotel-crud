@@ -1,4 +1,6 @@
 <div class="">
+  <h1>Pagamenti</h1>
+  <br>
   <ul>
     @foreach ($pagamenti as $pagamento)
       <li>

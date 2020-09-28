@@ -1,6 +1,6 @@
 @include('layouts.main-layout');
 
-<form class="" action="{{route('pagamento.edit', $pagamenti -> id)}}" method="post">
+<form class="" action="{{route('pagamento.update', $pagamenti -> id)}}" method="post">
   @csrf
   @method('POST')
   <div class="">
