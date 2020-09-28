@@ -9,6 +9,7 @@
   <body>
     <div class="">
       @include('layouts.partials.header');
+      @yield('section');
     </div>
   </body>
 </html>

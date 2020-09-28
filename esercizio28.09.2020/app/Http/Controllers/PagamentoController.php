@@ -8,7 +8,7 @@ class PagamentoController extends Controller
 {
     public function index(){
       $pagamenti = Pagamento::all();
-      return view('layouts.main-layout', compact('pagamenti'));
+      return view('layouts.pagamento-index', compact('pagamenti'));
     }
     public function destroy($id){
       $pagamento = Pagamento::findOrFail($id);
@@ -17,7 +17,7 @@ class PagamentoController extends Controller
     }
     public function edit($id){
       $pagamento = Pagamento::findOrFail($id);
-      return view('pagamento.edit', compact('pagamento'));
+      return view('layouts.pagamento-edit', compact('pagamento'));
     }
     public function update($id){
       $pagamento = Pagamento::findOrFail($id);
